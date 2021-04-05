@@ -20,7 +20,7 @@
             <!-- pwd -->
             <div class="row mt-3 pt-3 border-top border-secondary">
                 <div class="col-12">
-                    <a class="btn btn-success text-white" href="#" id="to-login" name="action">Back To Login</a>
+                    <a class="btn btn-success text-white" href="/login" id="to-login" name="action">Voltar para Login</a>
                     <button class="btn btn-info float-end" type="button" name="action">Recover</button>
                 </div>
             </div>

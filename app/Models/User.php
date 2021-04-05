@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
+use Tymon\JWTAuth\Facades\JWTAuth;
+use Exception;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use HasFactory, Notifiable;
 
@@ -29,7 +31,6 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'remember_token',
     ];
 
     /**
@@ -40,4 +41,44 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * @param $credentials
+     * @return false|string
+     * @throws Exception
+     */
+    public function login($credentials)
+    {
+        if (!$token = JWTAuth::attempt($credentials)) {
+            throw new Exception("Credencias incorretas, verifique-as e tente novamente.", -404);
+        }
+        return $token;
+    }
+
+    /**
+     * @param $token
+     * @throws Exception
+     */
+    public function logout($token)
+    {
+        if (!JWTAuth::invalidate($token)) {
+            throw new Exception('Erro. Tente novamente', -404);
+        }
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
 }

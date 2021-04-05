@@ -5,11 +5,9 @@
 
 >sudo apt install php-xml
 
->composer update
-
 > composer install
 
-> copiar o arquivo .env.example para .env
+> cp .env.example .env
 
 > php artisan key:generate
 

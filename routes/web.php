@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
@@ -24,10 +23,15 @@ Route::get('/pdv', function () {
     return view('pdv');
 });
 
+/**
+ * Rotas de Autenticação
+ */
 Route::get('/login', function () {
     return view('login');
 });
-
+Route::get('/login2', function () {
+    return view('login2');
+});
 Route::get('/recover', function () {
     return view('recover');
 });

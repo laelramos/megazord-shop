@@ -35,3 +35,10 @@ Route::get('/login2', function () {
 Route::get('/recover', function () {
     return view('recover');
 });
+
+/**
+ * Rotas Comercial
+ */
+Route::get('/cadastros', function () {
+    return view('cadastros');
+});

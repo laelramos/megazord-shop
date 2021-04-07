@@ -267,7 +267,7 @@
                         href="javascript:void(0)" aria-expanded="false"><i class="fas fa-briefcase"></i>
                         <span class="hide-menu">Comercial</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/cadastros" class="sidebar-link">
                                 <i class="fas fa-pencil-alt"></i><span class="hide-menu"> Cadastros </span></a></li>
                                 <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
                                 <i class="far fa-money-bill-alt"></i><span class="hide-menu"> Valores </span></a></li>

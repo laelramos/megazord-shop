@@ -9,6 +9,8 @@
 
 ## Instalar dependências
 > composer install
+> 
+> npm install
 
 ## Configurando ambiente
 > cp .env.example .env

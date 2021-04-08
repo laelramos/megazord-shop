@@ -18,6 +18,7 @@
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5db52cd286.js" crossorigin="anonymous"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -253,70 +254,70 @@
 
                     <li class="sidebar-item">
                         <a  class="sidebar-link waves-effect waves-dark sidebar-link"
-                            href="/dashboard" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i>
+                            href="/dashboard" aria-expanded="false"><i class="fas fa-tachometer-alt"></i>
                             <span class="hide-menu">Dashboard</span></a></li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="/pdv" aria-expanded="false"><i class="mdi mdi-chart-bar"></i>
+                        href="/pdv" aria-expanded="false"><i class="fas fa-cash-register"></i>
                         <span class="hide-menu">PDV</span></a></li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link has-arrow waves-effect waves-dark"
-                        href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i>
+                        href="javascript:void(0)" aria-expanded="false"><i class="fas fa-briefcase"></i>
                         <span class="hide-menu">Comercial</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link">
-                                <i class="mdi mdi-emoticon"></i><span class="hide-menu"> Cadastros </span></a></li>
+                                <li class="sidebar-item"><a href="/cadastros" class="sidebar-link">
+                                <i class="fas fa-pencil-alt"></i><span class="hide-menu"> Cadastros </span></a></li>
                                 <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
-                                <i class="mdi mdi-emoticon-cool"></i><span class="hide-menu"> Valores </span></a></li>
+                                <i class="far fa-money-bill-alt"></i><span class="hide-menu"> Valores </span></a></li>
                             </ul>
                     </li>
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="tables.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i>
+                        href="tables.html" aria-expanded="false"><i class="fas fa-truck"></i>
                         <span class="hide-menu">Logística</span></a></li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link has-arrow waves-effect waves-dark"
-                        href="grid.html" aria-expanded="false"><i class="mdi mdi-blur-linear"></i>
+                        href="grid.html" aria-expanded="false"><i class="fas fa-dollar-sign"></i>
                         <span class="hide-menu">Financeiro</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="form-basic.html" class="sidebar-link">
-                                <i class="mdi mdi-note-outline"></i><span class="hide-menu"> Fluxo </span></a></li>
+                                <i class="fas fa-exchange-alt"></i><span class="hide-menu"> Fluxo </span></a></li>
                                 <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link">
-                                <i class="mdi mdi-note-plus"></i><span class="hide-menu"> Crediário </span></a></li>
+                                <i class="fas fa-credit-card"></i><span class="hide-menu"> Crediário </span></a></li>
                                 <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link">
-                                <i class="mdi mdi-note-plus"></i><span class="hide-menu"> Contas </span></a></li>
-                            </ul>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link has-arrow waves-effect waves-dark"
-                        href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i>
-                        <span class="hide-menu">Administração</span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="form-basic.html" class="sidebar-link">
-                                <i class="mdi mdi-note-outline"></i><span class="hide-menu">B. Patrimonial</span></a></li>
-                                <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link">
-                                <i class="mdi mdi-note-plus"></i><span class="hide-menu">Imobilizado</span></a></li>
+                                <i class="fas fa-file-invoice-dollar"></i></i><span class="hide-menu"> Contas </span></a></li>
                             </ul>
                     </li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="pages-buttons.html" aria-expanded="false"><i class="mdi mdi-relative-scale"></i>
+                        href="pages-buttons.html" aria-expanded="false"><i class="fas fa-dolly"></i>
                         <span class="hide-menu">Estoque</span></a></li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link has-arrow waves-effect waves-dark"
-                           href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-face"></i>
+                           href="javascript:void(0)" aria-expanded="false"><i class="fas fa-file-alt"></i>
                            <span class="hide-menu">Relatórios</span></a>
                                     <ul aria-expanded="false" class="collapse  first-level">
                                         <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link">
-                                        <i class="mdi mdi-emoticon"></i><span class="hide-menu"> Vendas </span></a></li>
+                                        <i class="fas fa-long-arrow-alt-right"></i></i><span class="hide-menu"> Vendas </span></a></li>
                                         <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
-                                        <i class="mdi mdi-emoticon-cool"></i><span class="hide-menu"> Compras </span></a></li>
+                                        <i class="fas fa-long-arrow-alt-left"></i><span class="hide-menu"> Compras </span></a></li>
+                                    </ul>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow waves-effect waves-dark"
+                           href="javascript:void(0)" aria-expanded="false"><i class="fas fa-cogs"></i>
+                           <span class="hide-menu">Configurações</span></a>
+                           <ul aria-expanded="false" class="collapse  first-level">
+                                        <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link">
+                                        <i class="fas fa-user"></i><span class="hide-menu"> Usuários </span></a></li>
+                                        <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
+                                        <i class="mdi mdi-emoticon-cool"></i><span class="hide-menu"> Menu 2 </span></a></li>
                                     </ul>
                     </li>
 

@@ -22,6 +22,39 @@ Route::get('/dashboard', function () {
 Route::get('/pdv', function () {
     return view('pdv');
 });
+Route::get('/cadastros', function () {
+    return view('cadastros');
+});
+Route::get('/valores', function () {
+    return view('valores');
+});
+Route::get('/logistica', function () {
+    return view('logistica');
+});
+Route::get('/fluxo', function () {
+    return view('fluxo');
+});
+Route::get('/crediario', function () {
+    return view('crediario');
+});
+Route::get('/contas', function () {
+    return view('contas');
+});
+Route::get('/estoque', function () {
+    return view('estoque');
+});
+Route::get('/vendas', function () {
+    return view('vendas');
+});
+Route::get('/compras', function () {
+    return view('compras');
+});
+Route::get('/usuarios', function () {
+    return view('usuarios');
+});
+Route::get('/outros', function () {
+    return view('outros');
+});
 
 /**
  * Rotas de Autenticação
@@ -36,9 +69,3 @@ Route::get('/recover', function () {
     return view('recover');
 });
 
-/**
- * Rotas Comercial
- */
-Route::get('/cadastros', function () {
-    return view('cadastros');
-});

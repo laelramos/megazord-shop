@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Megazord-shop :: PDV')
+@section('page-title', 'Matrix Admin :: PDV')
 @section('title', 'PDV')
 
 @section('main')

@@ -269,42 +269,42 @@
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="/cadastros" class="sidebar-link">
                                 <i class="fas fa-pencil-alt"></i><span class="hide-menu"> Cadastros </span></a></li>
-                                <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/valores" class="sidebar-link">
                                 <i class="far fa-money-bill-alt"></i><span class="hide-menu"> Valores </span></a></li>
                             </ul>
                     </li>
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="tables.html" aria-expanded="false"><i class="fas fa-truck"></i>
+                        href="/logistica" aria-expanded="false"><i class="fas fa-truck"></i>
                         <span class="hide-menu">Logística</span></a></li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link has-arrow waves-effect waves-dark"
-                        href="grid.html" aria-expanded="false"><i class="fas fa-dollar-sign"></i>
+                        href="/financeiro" aria-expanded="false"><i class="fas fa-dollar-sign"></i>
                         <span class="hide-menu">Financeiro</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="form-basic.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/fluxo" class="sidebar-link">
                                 <i class="fas fa-exchange-alt"></i><span class="hide-menu"> Fluxo </span></a></li>
-                                <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/crediario" class="sidebar-link">
                                 <i class="fas fa-credit-card"></i><span class="hide-menu"> Crediário </span></a></li>
-                                <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/contas" class="sidebar-link">
                                 <i class="fas fa-file-invoice-dollar"></i></i><span class="hide-menu"> Contas </span></a></li>
                             </ul>
                     </li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href="pages-buttons.html" aria-expanded="false"><i class="fas fa-dolly"></i>
+                        href="/estoque" aria-expanded="false"><i class="fas fa-dolly"></i>
                         <span class="hide-menu">Estoque</span></a></li>
 
                     <li class="sidebar-item">
                         <a class="sidebar-link has-arrow waves-effect waves-dark"
-                           href="javascript:void(0)" aria-expanded="false"><i class="fas fa-file-alt"></i>
+                           href="/javascript:void(0)" aria-expanded="false"><i class="fas fa-file-alt"></i>
                            <span class="hide-menu">Relatórios</span></a>
                                     <ul aria-expanded="false" class="collapse  first-level">
-                                        <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link">
+                                        <li class="sidebar-item"><a href="/vendas" class="sidebar-link">
                                         <i class="fas fa-long-arrow-alt-right"></i></i><span class="hide-menu"> Vendas </span></a></li>
-                                        <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
+                                        <li class="sidebar-item"><a href="/compras" class="sidebar-link">
                                         <i class="fas fa-long-arrow-alt-left"></i><span class="hide-menu"> Compras </span></a></li>
                                     </ul>
                     </li>
@@ -314,10 +314,10 @@
                            href="javascript:void(0)" aria-expanded="false"><i class="fas fa-cogs"></i>
                            <span class="hide-menu">Configurações</span></a>
                            <ul aria-expanded="false" class="collapse  first-level">
-                                        <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link">
+                                        <li class="sidebar-item"><a href="/usuarios" class="sidebar-link">
                                         <i class="fas fa-user"></i><span class="hide-menu"> Usuários </span></a></li>
-                                        <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link">
-                                        <i class="mdi mdi-emoticon-cool"></i><span class="hide-menu"> Menu 2 </span></a></li>
+                                        <li class="sidebar-item"><a href="/outros" class="sidebar-link">
+                                        <i class="fas fa-comment-dots"></i><span class="hide-menu"> Outros </span></a></li>
                                     </ul>
                     </li>
 

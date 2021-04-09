@@ -10,7 +10,7 @@
     <div class="col-md-6 col-lg-6 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-success text-center">
-                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
+                <h1 class="font-light text-white"><i class="fas fa-dollar-sign"> 34,00</i></h1>
                 <h6 class="text-white">Saldo</h6>
             </div>
         </div>
@@ -20,7 +20,7 @@
     <div class="col-md-6 col-lg-6 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-cyan text-center">
-                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
+                <h1 class="font-light text-white"><i class="fas fa-dollar-sign"> 344,00</i></h1>
                 <h6 class="text-white">à Receber</h6>
             </div>
         </div>
@@ -30,7 +30,7 @@
     <div class="col-md-6 col-lg-6 col-xlg-3">
         <div class="card card-hover">
             <div class="box bg-warning text-center">
-                <h1 class="font-light text-white"><i class="mdi mdi-receipt"></i></h1>
+                <h1 class="font-light text-white"><i class="fas fa-dollar-sign"> 12,00</i></h1>
                 <h6 class="text-white">Crediário</h6>
             </div>
         </div>

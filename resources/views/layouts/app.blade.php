@@ -11,7 +11,7 @@
     <meta name="description"
           content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>@yield('page-title', 'Matrix Admin Lite Free Versions Template by WrapPixel')</title>
+    <title>@yield('page-title', 'Matrix Admin')</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <!-- Custom CSS -->
@@ -419,10 +419,10 @@
         <!-- ============================================================== -->
         <!-- footer -->
         <!-- ============================================================== -->
-        <footer class="footer text-center">
+        <!--<footer class="footer text-center">
             All Rights Reserved by Matrix-admin. Designed and Developed by <a
                 href="https://www.wrappixel.com">WrapPixel</a>.
-        </footer>
+        </footer>-->
         <!-- ============================================================== -->
         <!-- End footer -->
         <!-- ============================================================== -->

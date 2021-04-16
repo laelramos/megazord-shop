@@ -808,6 +808,11 @@
 <!--chartjs -->
 <script src="../../xtreme-admin/assets/libs/chart.js/dist/Chart.min.js"></script>
 <script src="../../xtreme-admin/dist/js/pages/dashboards/dashboard1.js"></script>
+
+
+    <!--This page plugins -->
+    <script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
+    <script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
 </body>
 
 </html>

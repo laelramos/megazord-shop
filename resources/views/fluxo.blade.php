@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.xtreme')
 
 @section('page-title', 'Matrix Admin :: Fluxo')
 @section('title', 'Fluxo De Caixa')
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-<button type="button" class="btn btn-success text-white"><b> Nova Receita</b></button> 
+<button type="button" class="btn btn-success text-white"><b> Nova Receita</b></button>
 <button type="button" class="btn btn-danger text-white"><b> Nova Despesa</b></button>
 </div>
 
@@ -83,7 +83,7 @@
                             <th>Action Figure Kakashi</th>
                             <th>10/10/2020</th>
                             <th>R$119,90</th>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td><i class="far fa-arrow-alt-circle-right"></i></td>
                             <td>Compra</td>
@@ -97,7 +97,7 @@
                             <th>Action Figure Kakashi</th>
                             <th>10/10/2020</th>
                             <th>R$119,90</th>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td><i class="far fa-arrow-alt-circle-right"></i></td>
                             <td>Compra</td>
@@ -111,7 +111,7 @@
                             <th>Action Figure Kakashi</th>
                             <th>10/10/2020</th>
                             <th>R$119,90</th>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td><i class="far fa-arrow-alt-circle-right"></i></td>
                             <td>Compra</td>
@@ -125,7 +125,7 @@
                             <th>Action Figure Kakashi</th>
                             <th>10/10/2020</th>
                             <th>R$119,90</th>
-                        </tr> 
+                        </tr>
                         <tr>
                             <td><i class="far fa-arrow-alt-circle-right"></i></td>
                             <td>Compra</td>
@@ -139,7 +139,7 @@
                             <th>Action Figure Kakashi</th>
                             <th>10/10/2020</th>
                             <th>R$119,90</th>
-                        </tr>     
+                        </tr>
                     </tbody>
                 </table>
             </div>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.xtreme')
 
 @section('page-title', 'Matrix Admin :: Compras')
 @section('title', 'Compras')

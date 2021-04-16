@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.xtreme')
 
 @section('page-title', 'Matrix Admin :: Estoque')
 @section('title', 'Estoque')
@@ -43,7 +43,7 @@
                             <td>Raglan branca</td>
                             <td>17</td>
                             <td>R$ 11,00</td>
-                        </tr>    
+                        </tr>
                     </tbody>
                 </table>
             </div>

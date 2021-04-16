@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.xtreme')
 
 @section('page-title', 'Matrix Admin :: Cadastros')
 @section('title', 'Cadastros')

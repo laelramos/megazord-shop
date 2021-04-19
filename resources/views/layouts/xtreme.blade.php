@@ -410,14 +410,14 @@
                     
                     <!-- Menu Dashboard-->
                     <li class="sidebar-item"> 
-                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark" href="/dashboard" aria-expanded="false">
                     <i class="mdi mdi-view-dashboard"></i>
                     <span class="hide-menu">Dashboard </span></a>
                     </li>
                     
                     <!-- Menu PDV-->
                     <li class="sidebar-item"> 
-                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark" href="/pdv" aria-expanded="false">
                     <i class="mdi mdi-tune-vertical"></i>
                     <span class="hide-menu">PDV</span></a>
                     </li>
@@ -428,18 +428,21 @@
                     <i class="mdi mdi-content-copy"></i>
                     <span class="hide-menu">Comercial</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
-                            <li class="sidebar-item"><a href="layout-inner-fixed-left-sidebar.html" class="sidebar-link">
+                            <li class="sidebar-item"><a href="/cadasatros" class="sidebar-link">
                             <i class="mdi mdi-format-align-left"></i>
                             <span class="hide-menu">Cadastros</span></a></li>
-                            <li class="sidebar-item"><a href="layout-inner-fixed-right-sidebar.html" class="sidebar-link">
+                            <li class="sidebar-item"><a href="/valores" class="sidebar-link">
                             <i class="mdi mdi-format-align-right"></i>
                             <span class="hide-menu">Valores</span></a></li>
+                            <li class="sidebar-item"><a href="/pedidos" class="sidebar-link">
+                            <i class="mdi mdi-format-align-right"></i>
+                            <span class="hide-menu">Pedidos</span></a></li>
                         </ul>
                     </li>
 
                     <!-- Menu Logística-->
                     <li class="sidebar-item"> 
-                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark" href="/logistica" aria-expanded="false">
                     <i class="mdi mdi-inbox-arrow-down"></i>
                     <span class="hide-menu">Logística</span></a>
                     </li>
@@ -448,28 +451,33 @@
                     <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="mdi mdi-bookmark-plus-outline"></i>
-                    <span class="hide-menu">Ticket </span></a>
+                    <span class="hide-menu">Financeiro</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
-                            <li class="sidebar-item"><a href="ticket-list.html" class="sidebar-link">
+                            <li class="sidebar-item"><a href="/fluxo" class="sidebar-link">
                             <i class="mdi mdi-book-multiple"></i><span class="hide-menu">Fluxo</span></a></li>
                             
-                            <li class="sidebar-item"><a href="ticket-detail.html" class="sidebar-link">
+                            <li class="sidebar-item"><a href="/crediario" class="sidebar-link">
                             <i class="mdi mdi-book-plus"></i><span class="hide-menu">Crediário</span></a></li>
 
-                            <li class="sidebar-item"><a href="ticket-detail.html" class="sidebar-link">
+                            <li class="sidebar-item"><a href="/contas" class="sidebar-link">
                             <i class="mdi mdi-book-plus"></i><span class="hide-menu">Contas</span></a></li>
                         </ul>
                     </li>
 
                     <!-- Menu Estoque-->
                     <li class="sidebar-item"> 
+                    <a class="sidebar-link waves-effect waves-dark" href="/estoque" aria-expanded="false">
+                    <i class="mdi mdi-gradient"></i><span class="hide-menu">Estoque</span></a>
+                    </li>
+
+                    <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="mdi mdi-gradient"></i><span class="hide-menu">Relatórios</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="ticket-list.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/vendas" class="sidebar-link">
                                 <i class="mdi mdi-book-multiple"></i><span class="hide-menu">Vendas</span></a></li>
 
-                                <li class="sidebar-item"><a href="ticket-detail.html" class="sidebar-link">
+                                <li class="sidebar-item"><a href="/compras" class="sidebar-link">
                                 <i class="mdi mdi-book-plus"></i><span class="hide-menu">Compras</span></a></li>
                         </ul>
                     </li>
@@ -516,10 +524,7 @@
                     <h4 class="page-title">@yield('title')</h4>
                     <div class="d-flex align-items-center">
                         <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Library</li>
-                            </ol>
+                            
                         </nav>
                     </div>
                 </div>
@@ -798,21 +803,10 @@
 <script src="../../xtreme-admin/dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="../../xtreme-admin/dist/js/custom.min.js"></script>
-<!--This page JavaScript -->
-<!--chartis chart-->
-<script src="../../xtreme-admin/assets/libs/chartist/dist/chartist.min.js"></script>
-<script src="../../xtreme-admin/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-<!--c3 charts -->
-<script src="../../xtreme-admin/assets/extra-libs/c3/d3.min.js"></script>
-<script src="../../xtreme-admin/assets/extra-libs/c3/c3.min.js"></script>
-<!--chartjs -->
-<script src="../../xtreme-admin/assets/libs/chart.js/dist/Chart.min.js"></script>
-<script src="../../xtreme-admin/dist/js/pages/dashboards/dashboard1.js"></script>
 
 
-    <!--This page plugins -->
-    <script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
-    <script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
+
+
 </body>
 
 </html>

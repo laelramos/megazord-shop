@@ -28,6 +28,9 @@ Route::get('/cadastros', function () {
 Route::get('/valores', function () {
     return view('valores');
 });
+Route::get('/pedidos', function () {
+    return view('pedidos');
+});
 Route::get('/logistica', function () {
     return view('logistica');
 });
@@ -55,6 +58,7 @@ Route::get('/usuarios', function () {
 Route::get('/outros', function () {
     return view('outros');
 });
+
 
 /**
  * Rotas de Autenticação

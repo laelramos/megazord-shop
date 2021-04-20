@@ -14,7 +14,10 @@
     <link href="../../xtreme-admin/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="../../xtreme-admin/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <script src="https://kit.fontawesome.com/5db52cd286.js" crossorigin="anonymous"></script>
     <link href="../../xtreme-admin/dist/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+    <link href="../../xtreme-admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -418,24 +421,24 @@
                     <!-- Menu PDV-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/pdv" aria-expanded="false">
-                    <i class="mdi mdi-tune-vertical"></i>
+                    <i class="fas fa-cash-register"></i>
                     <span class="hide-menu">PDV</span></a>
                     </li>
 
                     <!-- Menu Comercial-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                    <i class="mdi mdi-content-copy"></i>
+                    <i class="fas fa-store"></i>
                     <span class="hide-menu">Comercial</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
                             <li class="sidebar-item"><a href="/cadasatros" class="sidebar-link">
-                            <i class="mdi mdi-format-align-left"></i>
+                            <i class="fas fa-pencil-alt"></i>
                             <span class="hide-menu">Cadastros</span></a></li>
                             <li class="sidebar-item"><a href="/valores" class="sidebar-link">
-                            <i class="mdi mdi-format-align-right"></i>
+                            <i class="fas fa-dollar-sign"></i>
                             <span class="hide-menu">Valores</span></a></li>
                             <li class="sidebar-item"><a href="/pedidos" class="sidebar-link">
-                            <i class="mdi mdi-format-align-right"></i>
+                            <i class="fas fa-clipboard-list"></i>
                             <span class="hide-menu">Pedidos</span></a></li>
                         </ul>
                     </li>
@@ -443,49 +446,49 @@
                     <!-- Menu Logística-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/logistica" aria-expanded="false">
-                    <i class="mdi mdi-inbox-arrow-down"></i>
+                    <i class="fas fa-truck"></i>
                     <span class="hide-menu">Logística</span></a>
                     </li>
 
                     <!-- Menu Financeiro-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                    <i class="mdi mdi-bookmark-plus-outline"></i>
+                    <i class="mdi mdi-cash-multiple"></i>
                     <span class="hide-menu">Financeiro</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
                             <li class="sidebar-item"><a href="/fluxo" class="sidebar-link">
-                            <i class="mdi mdi-book-multiple"></i><span class="hide-menu">Fluxo</span></a></li>
+                            <i class="fas fa-exchange-alt"></i><span class="hide-menu">Fluxo</span></a></li>
                             
                             <li class="sidebar-item"><a href="/crediario" class="sidebar-link">
-                            <i class="mdi mdi-book-plus"></i><span class="hide-menu">Crediário</span></a></li>
+                            <i class="fas fa-credit-card"></i><span class="hide-menu">Crediário</span></a></li>
 
                             <li class="sidebar-item"><a href="/contas" class="sidebar-link">
-                            <i class="mdi mdi-book-plus"></i><span class="hide-menu">Contas</span></a></li>
+                            <i class="fas fa-hand-holding-usd"></i><span class="hide-menu">Contas</span></a></li>
                         </ul>
                     </li>
 
                     <!-- Menu Estoque-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/estoque" aria-expanded="false">
-                    <i class="mdi mdi-gradient"></i><span class="hide-menu">Estoque</span></a>
+                    <i class="fas fa-dolly"></i></i><span class="hide-menu">Estoque</span></a>
                     </li>
 
                     <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                    <i class="mdi mdi-gradient"></i><span class="hide-menu">Relatórios</span></a>
+                    <i class="far fa-file-alt"></i><span class="hide-menu">Relatórios</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="/vendas" class="sidebar-link">
-                                <i class="mdi mdi-book-multiple"></i><span class="hide-menu">Vendas</span></a></li>
+                                <i class="fas fa-arrow-right"></i></i><span class="hide-menu">Vendas</span></a></li>
 
                                 <li class="sidebar-item"><a href="/compras" class="sidebar-link">
-                                <i class="mdi mdi-book-plus"></i><span class="hide-menu">Compras</span></a></li>
+                                <i class="fas fa-arrow-left"></i><span class="hide-menu">Compras</span></a></li>
                         </ul>
                     </li>
 
                     <!-- Menu Configurações-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                    <i class="mdi mdi-widgets"></i><span class="hide-menu">Configurações</span></a>
+                    <i class="fas fa-pencil-alt"></i><span class="hide-menu">Configurações</span></a>
                         <ul aria-expanded="false" class="collapse first-level">
                             <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-toggle-switch"></i><span class="hide-menu"> Buttons</span></a></li>
                             <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-tablet"></i><span class="hide-menu"> Modals</span></a></li>

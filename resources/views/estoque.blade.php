@@ -13,7 +13,9 @@
                 <div class="d-flex align-items-center">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                            <button type="button" class="btn waves-effect waves-light btn-success">Novo Produto</button> 
+                            <button type="button" class="btn waves-effect waves-light btn-success"
+                                    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                            <i class="mdi mdi-plus"></i> Novo Produto</button> 
                             </ol>
                         </nav>
                     </div>
@@ -74,7 +76,107 @@
                 </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel1">Novo Produto</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="inputcom" class="control-label col-form-label">Descrição</label>
+                                                    <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Categoria</label>
+                                                    <select class="form-control">
+                                                        <option>Selecione...</option>
+                                                        <option>Funko</option>
+                                                        <option>Lego</option>
+                                                        <option>Camiseta</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Código</label>
+                                                    <input type="text" class="form-control" id="inputcom" placeholder="#000000">
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                        <!---->
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Qtd. Inicial</label>
+                                                    <div class="form-group">
+                                                        <input id="demo_vertical2" type="text" value="" name="demo_vertical2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Código</label>
+                                                    <input type="text" class="form-control" id="inputcom" placeholder="#000000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!---->
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Select File</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Upload</span>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Qtd. Inicial</label>
+                                                    <div class="form-group">
+                                                        <input id="demo_vertical2" type="text" value="" name="demo_vertical2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-form-label">Código</label>
+                                                    <input type="text" class="form-control" id="inputcom" placeholder="#000000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success">Cadastrar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <!-- /.modal -->
     
 <div class="chat-windows"></div>
 <!-- ============================================================== -->
@@ -84,11 +186,23 @@
 
 
 
-    <!--This page plugins -->
-    <script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
-    
-    <script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
+<!--This page plugins -->
+<script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
 
-    
+<script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
+
+
+
+<script src="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <script>
+    //==================================================//
+    //          Vertical buttons with custom icons      //
+    //==================================================//
+    $("input[name='demo_vertical2']").TouchSpin({
+        verticalbuttons: true,
+        verticalupclass: 'glyphicon glyphicon-plus',
+        verticaldownclass: 'glyphicon glyphicon-minus'
+    });
+    </script>
 
 @endsection

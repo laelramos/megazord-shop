@@ -114,26 +114,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <!---->
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-form-label">Qtd. Inicial</label>
-                                                    <div class="form-group">
-                                                        <input id="demo_vertical2" type="text" value="" name="demo_vertical2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-form-label">Código</label>
-                                                    <input type="text" class="form-control" id="inputcom" placeholder="#000000">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!---->
-
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group">
@@ -161,8 +141,8 @@
                                             </div>
                                             <div class="col-sm-12 col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label col-form-label">Código</label>
-                                                    <input type="text" class="form-control" id="inputcom" placeholder="#000000">
+                                                    <label class="control-label col-form-label">Custo</label>
+                                                    <input type="text" class="form-control" id="inputcom" placeholder="00,00">
                                                 </div>
                                             </div>
                                         </div>
@@ -170,7 +150,7 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Cadastrar</button>
+                                <button type="button" class="btn btn-success" id="ts-success" >Cadastrar</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                             </div>
                         </div>
@@ -204,5 +184,10 @@
         verticaldownclass: 'glyphicon glyphicon-minus'
     });
     </script>
+
+    <!--Custom JavaScript -->
+    <script src="../../xtreme-admin/dist/js/custom.min.js"></script>
+    <script src="../../xtreme-admin/assets/libs/toastr/build/toastr.min.js"></script>
+    <script src="../../xtreme-admin/assets/extra-libs/toastr/toastr-init.js"></script>
 
 @endsection

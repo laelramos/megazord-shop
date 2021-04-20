@@ -18,6 +18,8 @@
     <link href="../../xtreme-admin/dist/css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
     <link href="../../xtreme-admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../../xtreme-admin/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
+    <link href="../../assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -67,7 +69,7 @@
                              <img src="../../xtreme-admin/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
                         <!-- Light Logo text -->
                              <img src="../../xtreme-admin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
-                        </span>
+                    </span>
                 </a>
                 <!-- ============================================================== -->
                 <!-- End Logo -->

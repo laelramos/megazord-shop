@@ -166,7 +166,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3  m-b-30">
-                                    <h4 class="m-b-20">CONTACT US</h4>
+                                    <h4 class="m-b-20">CONTATO</h4>
                                     <!-- Contact -->
                                     <form>
                                         <div class="form-group">

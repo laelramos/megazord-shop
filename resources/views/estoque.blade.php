@@ -1,5 +1,12 @@
 @extends('layouts.xtreme')
 
+@section('style')
+    <link rel="stylesheet" type="text/css" href="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+    <link href="../../xtreme-admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../../xtreme-admin/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
+    <link href="../../assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
+@endsection
+
 @section('page-title', 'Matrix Admin :: Estoque')
 @section('title', 'Estoque')
 

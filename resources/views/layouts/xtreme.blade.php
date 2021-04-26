@@ -16,10 +16,9 @@
     <!-- Custom CSS -->
     <script src="https://kit.fontawesome.com/5db52cd286.js" crossorigin="anonymous"></script>
     <link href="../../xtreme-admin/dist/css/style.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
-    <link href="../../xtreme-admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
-    <link href="../../xtreme-admin/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
-    <link href="../../assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
+
+    @yield('style')
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -53,7 +52,7 @@
                 <!-- ============================================================== -->
                 <!-- Logo -->
                 <!-- ============================================================== -->
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="#">
                     <!-- Logo icon -->
                     <b class="logo-icon">
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -410,9 +409,7 @@
                             </div>
                         </div>
                         <!-- End User Profile-->
-                    </li>
-                    <li class="p-15 mt-2"><a href="javascript:void(0)" class="btn btn-block create-btn text-white no-block d-flex align-items-center"><i class="fa fa-plus-square"></i> <span class="hide-menu ml-1">Create New</span> </a></li>
-                    
+
                     <!-- Menu Dashboard-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/dashboard" aria-expanded="false">

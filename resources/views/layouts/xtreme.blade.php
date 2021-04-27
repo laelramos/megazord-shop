@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/5db52cd286.js" crossorigin="anonymous"></script>
     <link href="../../xtreme-admin/dist/css/style.min.css" rel="stylesheet">
 
+    <!-- Page Styles -->
     @yield('style')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -525,18 +526,8 @@
                 <div class="col-5 align-self-center">
                     <h4 class="page-title">@yield('title')</h4>
                     <div class="d-flex align-items-center">
-                        <nav aria-label="breadcrumb">
-                            
+                        <nav aria-label="breadcrumb">                            
                         </nav>
-                    </div>
-                </div>
-                <div class="col-7 align-self-center">
-                    <div class="d-flex no-block justify-content-end align-items-center">
-                        <div class="m-r-10">
-                            <div class="lastmonth"></div>
-                        </div>
-                        <div class=""><small>LAST MONTH</small>
-                            <h4 class="text-info m-b-0 font-medium">$58,256</h4></div>
                     </div>
                 </div>
             </div>
@@ -557,7 +548,7 @@
         <!-- footer -->
         <!-- ============================================================== -->
         <footer class="footer text-center">
-            All Rights Reserved by Xtreme admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+            All Rights Reserved. Designed by Neo Design</a>.
         </footer>
         <!-- ============================================================== -->
         <!-- End footer -->
@@ -656,131 +647,7 @@
                 </div>
             </div>
             <!-- End Tab 1 -->
-            <!-- Tab 2 -->
-            <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <ul class="mailbox list-style-none m-t-20">
-                    <li>
-                        <div class="message-center chat-scroll">
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_1' data-user-id='1'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/1.jpg" alt="user" class="rounded-circle"> <span class="profile-status online pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_2' data-user-id='2'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/2.jpg" alt="user" class="rounded-circle"> <span class="profile-status busy pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_3' data-user-id='3'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/3.jpg" alt="user" class="rounded-circle"> <span class="profile-status away pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_4' data-user-id='4'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/4.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Nirav Joshi</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_5' data-user-id='5'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/5.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Sunil Joshi</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_6' data-user-id='6'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/6.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Akshay Kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_7' data-user-id='7'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/7.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                            <!-- Message -->
-                            <a href="javascript:void(0)" class="message-item" id='chat_user_8' data-user-id='8'>
-                                <span class="user-img"> <img src="../../xtreme-admin/assets/images/users/8.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                <div class="mail-contnet">
-                                    <h5 class="message-title">Varun Dhavan</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                            </a>
-                            <!-- Message -->
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Tab 2 -->
-            <!-- Tab 3 -->
-            <div class="tab-pane fade p-15" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <h6 class="m-t-20 m-b-20">Activity Timeline</h6>
-                <div class="steamline">
-                    <div class="sl-item">
-                        <div class="sl-left bg-success"> <i class="ti-user"></i></div>
-                        <div class="sl-right">
-                            <div class="font-medium">Meeting today <span class="sl-date"> 5pm</span></div>
-                            <div class="desc">you can write anything </div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left bg-info"><i class="fas fa-image"></i></div>
-                        <div class="sl-right">
-                            <div class="font-medium">Send documents to Clark</div>
-                            <div class="desc">Lorem Ipsum is simply </div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left"> <img class="rounded-circle" alt="user" src="../../xtreme-admin/assets/images/users/2.jpg"> </div>
-                        <div class="sl-right">
-                            <div class="font-medium">Go to the Doctor <span class="sl-date">5 minutes ago</span></div>
-                            <div class="desc">Contrary to popular belief</div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left"> <img class="rounded-circle" alt="user" src="../../xtreme-admin/assets/images/users/1.jpg"> </div>
-                        <div class="sl-right">
-                            <div><a href="javascript:void(0)">Stephen</a> <span class="sl-date">5 minutes ago</span></div>
-                            <div class="desc">Approve meeting with tiger</div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left bg-primary"> <i class="ti-user"></i></div>
-                        <div class="sl-right">
-                            <div class="font-medium">Meeting today <span class="sl-date"> 5pm</span></div>
-                            <div class="desc">you can write anything </div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left bg-info"><i class="fas fa-image"></i></div>
-                        <div class="sl-right">
-                            <div class="font-medium">Send documents to Clark</div>
-                            <div class="desc">Lorem Ipsum is simply </div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left"> <img class="rounded-circle" alt="user" src="../../xtreme-admin/assets/images/users/4.jpg"> </div>
-                        <div class="sl-right">
-                            <div class="font-medium">Go to the Doctor <span class="sl-date">5 minutes ago</span></div>
-                            <div class="desc">Contrary to popular belief</div>
-                        </div>
-                    </div>
-                    <div class="sl-item">
-                        <div class="sl-left"> <img class="rounded-circle" alt="user" src="../../xtreme-admin/assets/images/users/6.jpg"> </div>
-                        <div class="sl-right">
-                            <div><a href="javascript:void(0)">Stephen</a> <span class="sl-date">5 minutes ago</span></div>
-                            <div class="desc">Approve meeting with tiger</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Tab 3 -->
+           
         </div>
     </div>
 </aside>

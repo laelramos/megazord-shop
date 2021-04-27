@@ -190,3 +190,48 @@
 <script src="../../xtreme-admin/assets/extra-libs/toastr/toastr-init.js"></script>
 
 @endsection
+
+@section('jquery')
+<div class="chat-windows"></div>
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="../../xtreme-admin/assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="../../xtreme-admin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../xtreme-admin/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- apps -->
+<script src="../../xtreme-admin/dist/js/app.min.js"></script>
+<script src="../../xtreme-admin/dist/js/app.init.dark.js"></script>
+<script src="../../xtreme-admin/dist/js/app-style-switcher.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="../../xtreme-admin/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="../../xtreme-admin/assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="../../xtreme-admin/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="../../xtreme-admin/dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="../../xtreme-admin/dist/js/custom.min.js"></script>
+<div class="chat-windows"></div>
+
+
+
+
+<script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
+<script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
+<script src="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+<script>
+    //==================================================//
+    //          Vertical buttons with custom icons      //
+    //==================================================//
+    $("input[name='demo_vertical2']").TouchSpin({
+        verticalbuttons: true,
+        verticalupclass: 'glyphicon glyphicon-plus',
+        verticaldownclass: 'glyphicon glyphicon-minus'
+    });
+</script>
+<script src="../../xtreme-admin/assets/libs/toastr/build/toastr.min.js"></script>
+<script src="../../xtreme-admin/assets/extra-libs/toastr/toastr-init.js"></script>
+
+@endsection

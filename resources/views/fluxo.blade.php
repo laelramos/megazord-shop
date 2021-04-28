@@ -1,6 +1,6 @@
 @extends('layouts.xtreme')
 
-@section('page-title', 'Matrix Admin :: Fluxo')
+@section('page-title', 'Matrix :: Fluxo')
 @section('title', 'Fluxo De Caixa')
 
 @section('style')
@@ -21,7 +21,7 @@
     <!-- ============================================================== -->
     <!-- Container fluid  -->
     <!-- ============================================================== -->
-    <div class="container-fluid">
+
         <!-- ============================================================== -->
         <!-- Start Page Content -->
         <!-- ============================================================== -->
@@ -40,9 +40,8 @@
                     <div class="col-sm-12 col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Earnings</h4>
-                                <h5 class="card-subtitle">Total Earnings of the Month</h5>
-                                <h2 class="font-medium">$43,567.53</h2>
+                                <h4 class="card-title">Saldo</h4>
+                                <h2 class="font-medium">R$500,00</h2>
                             </div>
                             <div class="earningsbox m-t-5" style="height:78px; width:100%;"></div>
                         </div>
@@ -51,8 +50,7 @@
                     <div class="col-sm-12 col-lg-8">
                         <div class="card">
                             <div class="card-body border-bottom">
-                                <h4 class="card-title">Overview</h4>
-                                <h5 class="card-subtitle">Total Earnings of the Month</h5>
+                                <h4 class="card-title">Movimentações</h4>
                             </div>
                             <div class="card-body">
                                 
@@ -63,41 +61,48 @@
                                             <table class="table v-middle">
                                                 <thead>
                                                     <tr>
-                                                        <th class="border-top-0">Price</th>
-                                                        <th class="border-top-0">Amount</th>
-                                                        <th class="border-top-0">Date</th>
+                                                        <th class="border-top-0">Operação</th>
+                                                        <th class="border-top-0">Descrição</th>
+                                                        <th class="border-top-0">Data</th>
+                                                        <th class="border-top-0">Valor</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><span class="text-success">$12948.89</span></td>
-                                                        <td><i class="cc BTC m-r-5"></i> <span class="font-medium">0.123</span></td>
-                                                        <td>12:45:09</td>
+                                                        <td>Entrada</td>
+                                                        <td><span class="font-medium">Estorno</span></td>
+                                                        <td>12/01/2021</td>
+                                                        <td><span class="text-success">R$129,89</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><span class="text-danger">$23135.78</span></td>
-                                                        <td><i class="cc XRP m-r-5"></i> <span class="font-medium">1.123</span></td>
-                                                        <td>12:43:09</td>
+                                                        <td>Saída</td>
+                                                        <td><span class="font-medium">Compra 1</span></td>
+                                                        <td>23/01/2021</td>
+                                                        <td><span class="text-danger">R$35,78</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><span class="text-success">$43567.98</span></td>
-                                                        <td><i class="cc ETH m-r-5 blue-text"></i> <span class="font-medium">0.123</span></td>
-                                                        <td>12:45:09</td>
+                                                        <td>Entrada</td>
+                                                        <td><span class="font-medium">Empréstimo</span></td>
+                                                        <td>17/03/2021</td>
+                                                        <td><span class="text-success">R$67,98</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><span class="text-success">$12948.89</span></td>
-                                                        <td><i class="cc BTC m-r-5"></i> <span class="font-medium">0.123</span></td>
-                                                        <td>12:45:09</td>
+                                                        <td>Entrada</td>
+                                                        <td><span class="font-medium">Investimento</span></td>
+                                                        <td>07/04/2021</td>
+                                                        <td><span class="text-success">R$18,89</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><span class="text-danger">$23135.78</span></td>
-                                                        <td><i class="cc XRP m-r-5"></i> <span class="font-medium">1.123</span></td>
-                                                        <td>12:43:09</td>
+                                                        <td>Saída</td>
+                                                        <td><span class="font-medium">Compra 2</span></td>
+                                                        <td>12/05/2021</td>
+                                                        <td><span class="text-danger">R$23,78</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><span class="text-success">$43567.98</span></td>
-                                                        <td><i class="cc ETH m-r-5 blue-text"></i> <span class="font-medium">0.123</span></td>
-                                                        <td>12:45:09</td>
+                                                        <td>Saída</td>
+                                                        <td><span class="font-medium">Compra 3</span></td>
+                                                        <td>12/05/2021</td>
+                                                        <td><span class="text-danger">R$67,98</span></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -111,8 +116,7 @@
                     </div>
                 </div>
 
-
-    </div>    
+   
 
 @endsection
 
@@ -138,7 +142,7 @@
 <script src="../../xtreme-admin/dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="../../xtreme-admin/dist/js/custom.min.js"></script>
-<div class="chat-windows"></div>
+
 
 
 

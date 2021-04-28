@@ -7,7 +7,7 @@
     <link href="../../assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
 @endsection
 
-@section('page-title', 'Matrix Admin :: Estoque')
+@section('page-title', 'Matrix :: Estoque')
 @section('title', 'Estoque')
 
 @section('main')

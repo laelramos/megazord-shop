@@ -11,9 +11,7 @@
 @section('title', 'Estoque')
 
 @section('main')
-
-<!-- Start Page Content -->
-                
+<!-- Start Page Content -->               
 <!-- ============================================================== -->
                 
     <div class="row">                

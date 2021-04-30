@@ -11,9 +11,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../xtreme-admin/assets/images/favicon.png">
     <title>@yield('page-title')</title>
     <!-- Custom CSS -->
-    <link href="../../xtreme-admin/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="../../xtreme-admin/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <script src="https://kit.fontawesome.com/5db52cd286.js" crossorigin="anonymous"></script>
     <link href="../../xtreme-admin/dist/css/style.min.css" rel="stylesheet">
 
@@ -418,6 +415,13 @@
                     <span class="hide-menu">Dashboard </span></a>
                     </li>
                     
+                    <!-- Agenda-->
+                    <li class="sidebar-item"> 
+                    <a class="sidebar-link waves-effect waves-dark" href="/agenda" aria-expanded="false">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="hide-menu"> Agenda </span></a>
+                    </li>
+
                     <!-- Menu PDV-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/pdv" aria-expanded="false">
@@ -431,7 +435,7 @@
                     <i class="fas fa-store"></i>
                     <span class="hide-menu">Comercial</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
-                            <li class="sidebar-item"><a href="/cadasatros" class="sidebar-link">
+                            <li class="sidebar-item"><a href="/cadastros" class="sidebar-link">
                             <i class="fas fa-pencil-alt"></i>
                             <span class="hide-menu">Cadastros</span></a></li>
                             <li class="sidebar-item"><a href="/valores" class="sidebar-link">

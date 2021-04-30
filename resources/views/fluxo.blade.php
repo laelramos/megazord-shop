@@ -11,7 +11,6 @@
 <link href="../../xtreme-admin/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
 <link href="../../xtreme-admin/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
 <link href="../../xtreme-admin/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
-
 <link href="../../xtreme-admin/assets/libs/morris.js/morris.css" rel="stylesheet">
 
 @endsection

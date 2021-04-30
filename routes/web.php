@@ -58,6 +58,12 @@ Route::get('/usuarios', function () {
 Route::get('/outros', function () {
     return view('outros');
 });
+Route::get('/agenda', function () {
+    return view('agenda');
+});
+Route::get('/checkout', function () {
+    return view('checkout');
+});
 
 
 /**
@@ -66,9 +72,7 @@ Route::get('/outros', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/login2', function () {
-    return view('login2');
-});
+
 Route::get('/recover', function () {
     return view('recover');
 });

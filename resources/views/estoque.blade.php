@@ -11,24 +11,24 @@
 @section('title', 'Estoque')
 
 @section('main')
-<!-- Start Page Content -->               
+<!-- Start Page Content -->
 <!-- ============================================================== -->
-                
-    <div class="row">                
+
+    <div class="row">
         <div class="d-flex align-items-center">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                 <button type="button" class="btn waves-effect waves-light btn-success"
                         data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                <i class="mdi mdi-plus"></i> Novo Produto</button> 
+                <i class="mdi mdi-plus"></i> Novo Produto</button>
                 </ol>
             </nav>
         </div>
 
                         <!-- Column -->
-        <div class="col-lg-12">                   
+        <div class="col-lg-12">
             <div class="card">
-                <div class="card-body">            
+                <div class="card-body">
                     <div class="table-responsive">
                         <table class="table product-overview" id="zero_config">
                             <thead>
@@ -42,7 +42,7 @@
                                     <th>Edit</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="tbody_produtos">
                                 <tr>
                                     <td> <img src="../../assets/images/gallery/itachiF.png" alt="iMac" width="80"></td>
                                     <td>#85457898</td>
@@ -80,7 +80,7 @@
     </div>
     <!-- ============================================================== -->
     <!-- End PAge Content -->
-   
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
         <div class="modal-dialog" role="document">
@@ -96,8 +96,16 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
+                                        <label for="inputcom" class="control-label col-form-label">Nome</label>
+                                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
                                         <label for="inputcom" class="control-label col-form-label">Descrição</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto">
+                                        <input type="text" class="form-control" id="descricao" placeholder="Descreva o produto">
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +124,7 @@
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Código</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="#000000">
+                                        <input type="text" class="form-control" id="codigo" placeholder="7890000000000">
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +142,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
@@ -163,13 +171,16 @@
         </div>
     </div>
     <!-- /.modal -->
-    
+
 <div class="chat-windows"></div>
 
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="../../xtreme-admin/assets/libs/jquery/dist/jquery.min.js"></script>
 <!--This page plugins -->
 <script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
 <script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
@@ -191,10 +202,8 @@
 
 @section('jquery')
 <div class="chat-windows"></div>
-<!-- ============================================================== -->
-<!-- All Jquery -->
-<!-- ============================================================== -->
-<script src="../../xtreme-admin/assets/libs/jquery/dist/jquery.min.js"></script>
+
+
 <!-- Bootstrap tether Core JavaScript -->
 <script src="../../xtreme-admin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
 <script src="../../xtreme-admin/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -228,6 +237,54 @@
         verticalupclass: 'glyphicon glyphicon-plus',
         verticaldownclass: 'glyphicon glyphicon-minus'
     });
+
+    const inputNome = document.getElementById('nome');
+    const inputDescricao = document.getElementById('descricao');
+    const inputCodigo = document.getElementById('codigo');
+
+    // Success Type
+    $('#ts-success').on('click', function(e) {
+        e.preventDefault();
+        let data = {
+            nome: inputNome.value,
+            descricao: inputDescricao.value,
+            codigo: inputCodigo.value,
+            imagem: null,
+            categoria_id: null,
+        };
+
+        Axios.post('produtos', data).then(response => {
+            if (response.data.id != '') {
+                toastr.success('Ação concluída');
+                return;
+            }
+        }).catch(error => {
+            toastr.error('Erro ao processar requisição');
+        });
+    });
+
+    const tabelaProdutos = document.getElementById('zero_config');
+    const tbodyProdutos = document.getElementById('tbody_produtos');
+
+    Axios.get('produtos').then(response => {
+        const produtos = response.data;
+        let novo = '';
+        produtos.map(produto => {
+            novo += `<tr>
+                            <td> <img src="../../assets/images/gallery/itachiF.png" alt="iMac" width="80"></td>
+                            <td>${produto.id}</td>
+                            <td>${produto.nome}</td>
+                            <td>${produto.nome}</td>
+                            <td>6</td>
+                            <td>90,90</td>
+                            <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="ti-trash"></i></a></td>
+                        </tr>`;
+        });
+        tbodyProdutos.innerHTML = novo;
+    }).catch(error => {
+        toastr.error('Erro ao processar requisição');
+    });
+
 </script>
 <script src="../../xtreme-admin/assets/libs/toastr/build/toastr.min.js"></script>
 <script src="../../xtreme-admin/assets/extra-libs/toastr/toastr-init.js"></script>

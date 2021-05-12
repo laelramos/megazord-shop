@@ -11,6 +11,7 @@
 @section('title', 'Estoque')
 
 @section('main')
+<!-- ============================================================== -->
 <!-- Start Page Content -->               
 <!-- ============================================================== -->
                 
@@ -163,29 +164,6 @@
         </div>
     </div>
     <!-- /.modal -->
-    
-<div class="chat-windows"></div>
-
-<!-- ============================================================== -->
-<!-- All Jquery -->
-<!-- ============================================================== -->
-
-<!--This page plugins -->
-<script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
-<script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
-<script src="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-<script>
-    //==================================================//
-    //          Vertical buttons with custom icons      //
-    //==================================================//
-    $("input[name='demo_vertical2']").TouchSpin({
-        verticalbuttons: true,
-        verticalupclass: 'glyphicon glyphicon-plus',
-        verticaldownclass: 'glyphicon glyphicon-minus'
-    });
-</script>
-<script src="../../xtreme-admin/assets/libs/toastr/build/toastr.min.js"></script>
-<script src="../../xtreme-admin/assets/extra-libs/toastr/toastr-init.js"></script>
 
 @endsection
 
@@ -211,11 +189,8 @@
 <script src="../../xtreme-admin/dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="../../xtreme-admin/dist/js/custom.min.js"></script>
-<div class="chat-windows"></div>
 
-
-
-
+<!-- This Page JS -->
 <script src="../../xtreme-admin/assets/extra-libs/DataTables/datatables.min.js"></script>
 <script src="../../xtreme-admin/dist/js/pages/datatable/datatable-basic.init.js"></script>
 <script src="../../xtreme-admin/assets/libs/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>

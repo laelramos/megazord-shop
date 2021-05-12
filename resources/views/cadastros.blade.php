@@ -15,6 +15,7 @@
 <!-- ============================================================== -->
 <!-- Start Page Content -->
 <!-- ============================================================== -->
+<div class="container-fluid">
     <div class="row">                
         <div class="d-flex align-items-center">
             <nav aria-label="breadcrumb">
@@ -28,7 +29,7 @@
     
     
     <div class="row el-element-overlay">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/itachiF.png" alt="user" />
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/kakashiF.jpg" alt="user" />
@@ -74,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/sakuraF.png" alt="user" />
@@ -97,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/kakashiF.jpg" alt="user" />
@@ -120,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/sakuraF.png" alt="user" />
@@ -143,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/itachiF.png" alt="user" />
@@ -166,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/kakashiF.jpg" alt="user" />
@@ -189,7 +190,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
             <div class="card">
                 <div class="el-card-item">
                     <div class="el-card-avatar el-overlay-1"> <img src="../../assets/images/gallery/itachiF.png" alt="user" />
@@ -213,6 +214,9 @@
             </div>
         </div>
     </div>
+
+
+</div>
 
 <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
@@ -294,7 +298,7 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
 <!-- /.modal -->
 <!-- ============================================================== -->
 <!-- End PAge Content -->

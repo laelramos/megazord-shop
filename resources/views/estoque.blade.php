@@ -5,6 +5,7 @@
     <link href="../../xtreme-admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../xtreme-admin/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
     <link href="../../assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
+    <link href="../../xtreme-admindist/css/style.min.css" rel="stylesheet">
 @endsection
 
 @section('page-title', 'Matrix :: Estoque')
@@ -14,95 +15,82 @@
 <!-- ============================================================== -->
 <!-- Start Page Content -->               
 <!-- ============================================================== -->
-                
-    <div class="row">                
-        <div class="d-flex align-items-center">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                <button type="button" class="btn waves-effect waves-light btn-success"
-                        data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                <i class="mdi mdi-plus"></i> Novo Produto</button> 
-                </ol>
-            </nav>
-        </div>
-
-                        <!-- Column -->
-        <div class="col-lg-12">                   
+    <div class="row">
+        <div class="col-12">                   
             <div class="card">
-                <div class="card-body">            
+                <div class="card-body">    
                     <div class="table-responsive">
                         <table class="table product-overview" id="zero_config">
-                            <thead>
-                                <tr>
-                                    <th>Foto</th>
-                                    <th>Código</th>
-                                    <th>Categoria</th>
-                                    <th>Descrição</th>
-                                    <th>Quantidade</th>
-                                    <th>Custo</th>
-                                    <th>Edit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td> <img src="../../assets/images/gallery/itachiF.png" alt="iMac" width="80"></td>
-                                    <td>#85457898</td>
-                                    <td> Funko </td>
-                                    <td>Funko Pop! Itachi #729</td>
-                                    <td>6</td>
-                                    <td>90,90</td>
-                                    <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="ti-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td> <img src="../../assets/images/gallery/kakashiF.jpg" alt="iMac" width="80"></td>
-                                    <td>#298634129</td>
-                                    <td> Funko </td>
-                                    <td>Funko Pop! Kakashi #182</td>
-                                    <td>2</td>
-                                    <td>85,90</td>
-                                    <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="ti-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td> <img src="../../assets/images/gallery/sakuraF.png" alt="iMac" width="80"></td>
-                                    <td>#801923810</td>
-                                    <td> Funko </td>
-                                    <td>Funko Pop! Sakura #164</td>
-                                    <td>4</td>
-                                    <td>70,90</td>
-                                    <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="ti-trash"></i></a></td>
-                                </tr>
-                            </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>Foto</th>
+                                        <th>Código</th>
+                                        <th>Categoria</th>
+                                        <th>Descrição</th>
+                                        <th>Quantidade</th>
+                                        <th>Custo</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> <img src="../../assets/images/gallery/itachiF.png" alt="iMac" width="80"></td>
+                                        <td>#85457898</td>
+                                        <td> Funko </td>
+                                        <td>Funko Pop! Itachi #729</td>
+                                        <td>6</td>
+                                        <td>90,90</td>
+                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="../../assets/images/gallery/kakashiF.jpg" alt="iMac" width="80"></td>
+                                        <td>#298634129</td>
+                                        <td> Funko </td>
+                                        <td>Funko Pop! Kakashi #182</td>
+                                        <td>2</td>
+                                        <td>85,90</td>
+                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="../../assets/images/gallery/sakuraF.png" alt="iMac" width="80"></td>
+                                        <td>#801923810</td>
+                                        <td> Funko </td>
+                                        <td>Funko Pop! Sakura #164</td>
+                                        <td>4</td>
+                                        <td>70,90</td>
+                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
+                                    </tr>
+                                </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Column -->
-    </div>
+
+    <!-- Column -->
     <!-- ============================================================== -->
     <!-- End PAge Content -->
    
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel1">Novo Produto</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="card-body">
-                            <div class="row">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel1">Novo Produto</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="card-body">
+                                <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="inputcom" class="control-label col-form-label">Descrição</label>
                                         <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
+                                </div>
+                                <div class="row">
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Categoria</label>
@@ -120,8 +108,8 @@
                                         <input type="text" class="form-control" id="inputcom" placeholder="#000000">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
+                                </div>
+                                <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Select File</label>
@@ -136,8 +124,8 @@
                                         </div>
                                     </div>
                                 </div>   
-                            </div>
-                            <div class="row">
+                                </div>
+                                <div class="row">
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Qtd. Inicial</label>
@@ -152,17 +140,19 @@
                                         <input type="text" class="form-control" id="inputcom" placeholder="00,00">
                                     </div>
                                 </div>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="ts-success" >Cadastrar</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="ts-success" >Cadastrar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- /.modal -->
 
 @endsection

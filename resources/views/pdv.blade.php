@@ -82,12 +82,6 @@
                             </tbody>
                         </table>
                         <hr>
-                        <div class="d-flex no-block align-items-center">
-                            <button class="btn btn-dark btn-outline"><i class="fas fa-arrow-left"></i> Continue comprando</button>
-                            <div class="ml-auto">
-                                <a href="/checkout"><button class="btn btn-danger"><i class="fa fa fa-shopping-cart"></i> Checkout</button></a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +96,7 @@
                     <h2>$612</h2>
                     <hr>
                     <a href="/checkout"><button class="btn btn-success">Checkout</button></a>
-                    <button class="btn btn-secondary btn-outline">Cancelar</button>
+                    <button type="button" class="btn waves-effect waves-light btn-outline-danger">Cancelar</button>
                 </div>
             </div>
             <div class="card">

@@ -492,7 +492,7 @@
                     <!-- Menu Configurações-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                    <i class="fas fa-pencil-alt"></i><span class="hide-menu">Configurações</span></a>
+                    <i class="fas fa-cog"></i><span class="hide-menu">Configurações</span></a>
                         <ul aria-expanded="false" class="collapse first-level">
                             <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-toggle-switch"></i><span class="hide-menu"> Buttons</span></a></li>
                             <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-tablet"></i><span class="hide-menu"> Modals</span></a></li>

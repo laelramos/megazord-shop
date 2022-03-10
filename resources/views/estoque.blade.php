@@ -11,53 +11,53 @@
 @section('page-title', 'Matrix :: Estoque')
 @section('title', 'Estoque')
 
+
+
+
+
+
 @section('main')
 <!-- ============================================================== -->
 <!-- Start Page Content -->               
 <!-- ============================================================== -->
+    <div class="row">                
+        <div class="d-flex align-items-center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <button type="button" class="btn waves-effect waves-light btn-success"
+                        data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                <i class="mdi mdi-plus"></i> Novo Produto</button> 
+                </ol>
+            </nav>
+        </div>
+    </div>
+
     <div class="row">
-        <div class="col-12">                   
+        <div class="col-12"> 
+                          
             <div class="card">
                 <div class="card-body">    
                     <div class="table-responsive">
                         <table class="table product-overview" id="zero_config">
                                 <thead>
                                     <tr>
-                                        <th>Foto</th>
-                                        <th>Código</th>
-                                        <th>Categoria</th>
+                                        <th>ID</th>
                                         <th>Descrição</th>
+                                        <th>EAN</th>
+                                        <th>Categoria</th>
                                         <th>Quantidade</th>
-                                        <th>Custo</th>
+                                        <!-- <th>Custo</th> -->
                                         <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td> <img src="../../assets/images/gallery/itachiF.png" alt="iMac" width="80"></td>
-                                        <td>#85457898</td>
-                                        <td> Funko </td>
+                                        <td>1</td>
                                         <td>Funko Pop! Itachi #729</td>
+                                        <td>848486878318</td>
+                                        <td> Funko </td>
                                         <td>6</td>
-                                        <td>90,90</td>
-                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td> <img src="../../assets/images/gallery/kakashiF.jpg" alt="iMac" width="80"></td>
-                                        <td>#298634129</td>
-                                        <td> Funko </td>
-                                        <td>Funko Pop! Kakashi #182</td>
-                                        <td>2</td>
-                                        <td>85,90</td>
-                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td> <img src="../../assets/images/gallery/sakuraF.png" alt="iMac" width="80"></td>
-                                        <td>#801923810</td>
-                                        <td> Funko </td>
-                                        <td>Funko Pop! Sakura #164</td>
-                                        <td>4</td>
-                                        <td>70,90</td>
+                                        <!-- <td>90,90</td> -->
                                         <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
                                     </tr>
                                 </tbody>
@@ -104,7 +104,7 @@
                                 </div>
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label col-form-label">Código</label>
+                                        <label class="control-label col-form-label">EAN</label>
                                         <input type="text" class="form-control" id="inputcom" placeholder="#000000">
                                     </div>
                                 </div>

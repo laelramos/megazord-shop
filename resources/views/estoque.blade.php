@@ -38,28 +38,37 @@
             <div class="card">
                 <div class="card-body">    
                     <div class="table-responsive">
+                        @if ($message = Session::get('success'))
+                        teste<br>
+                        {{$message}}
+                        @endif
                         <table class="table product-overview" id="zero_config">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Descrição</th>
-                                        <th>EAN</th>
+                                        <th>Produto</th>
                                         <th>Categoria</th>
+                                        <th>EAN</th>
                                         <th>Quantidade</th>
                                         <!-- <th>Custo</th> -->
                                         <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                                    @foreach($products as $product)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Funko Pop! Itachi #729</td>
-                                        <td>848486878318</td>
-                                        <td> Funko </td>
-                                        <td>6</td>
+                                        <td>{{$product->id}}</td>
+                                        <td>{{$product->name}}</td>
+                                        <td>{{$product->category}}</td>
+                                        <td>{{$product->ean}}</td>
+                                        <td>{{$product->qtd}}</td>
                                         <!-- <td>90,90</td> -->
                                         <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
                                     </tr>
+                                    @endforeach
+
+
                                 </tbody>
                         </table>
                     </div>
@@ -80,13 +89,15 @@
                         <span aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+
+                        <form action="{{route('products.store')}}" method="POST" id='frmProduto'>
+                            @csrf
                             <div class="card-body">
                                 <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="inputcom" class="control-label col-form-label">Descrição</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto">
+                                        <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto" name="name">
                                     </div>
                                 </div>
                                 </div>
@@ -94,7 +105,7 @@
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Categoria</label>
-                                        <select class="form-control">
+                                        <select class="form-control" name="category">
                                             <option>Selecione...</option>
                                             <option>Funko</option>
                                             <option>Lego</option>
@@ -105,7 +116,7 @@
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group">
                                         <label class="control-label col-form-label">EAN</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="#000000">
+                                        <input type="text" class="form-control" id="inputcom" placeholder="#000000" name="ean">
                                     </div>
                                 </div>
                                 </div>
@@ -130,7 +141,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-form-label">Qtd. Inicial</label>
                                         <div class="form-group">
-                                            <input id="demo_vertical2" type="text" value="" name="demo_vertical2">
+                                            <input id="qtd" type="text" value="" name="qtd">
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +156,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" id="ts-success" >Cadastrar</button>
+                        <button type="submit" form='frmProduto' class="btn btn-success" id="ts-success" >Cadastrar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                     </div>
                 </div>
@@ -188,7 +199,7 @@
     //==================================================//
     //          Vertical buttons with custom icons      //
     //==================================================//
-    $("input[name='demo_vertical2']").TouchSpin({
+    $("input[name='qtd']").TouchSpin({
         verticalbuttons: true,
         verticalupclass: 'glyphicon glyphicon-plus',
         verticaldownclass: 'glyphicon glyphicon-minus'

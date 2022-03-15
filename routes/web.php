@@ -55,10 +55,6 @@ Route::get('/contas', function () {
     return view('contas');
 });
 
-Route::get('/estoque', function () {
-    return view('estoque');
-});
-
 Route::get('/vendas', function () {
     return view('vendas');
 });

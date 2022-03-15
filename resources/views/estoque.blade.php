@@ -11,69 +11,64 @@
 @section('page-title', 'Matrix :: Estoque')
 @section('title', 'Estoque')
 
-
-
-
-
-
 @section('main')
 <!-- ============================================================== -->
 <!-- Start Page Content -->               
 <!-- ============================================================== -->
-    <div class="row">                
-        <div class="d-flex align-items-center">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                <button type="button" class="btn waves-effect waves-light btn-success"
-                        data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                <i class="mdi mdi-plus"></i> Novo Produto</button> 
-                </ol>
-            </nav>
-        </div>
+<div class="row">                 
+    <div class="d-flex align-items-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <button type="button" class="btn waves-effect waves-light btn-success"
+                    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+            <i class="mdi mdi-plus"></i> Novo Produto</button> 
+            </ol>
+        </nav>
     </div>
-
-    <div class="row">
-        <div class="col-12"> 
-                          
-            <div class="card">
-                <div class="card-body">    
-                    <div class="table-responsive">
-                        @if ($message = Session::get('success'))
-                        teste<br>
-                        {{$message}}
-                        @endif
-                        <table class="table product-overview" id="zero_config">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Produto</th>
-                                        <th>Categoria</th>
-                                        <th>EAN</th>
-                                        <th>Quantidade</th>
-                                        <!-- <th>Custo</th> -->
-                                        <th>Edit</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    @foreach($products as $product)
-                                    <tr>
-                                        <td>{{$product->id}}</td>
-                                        <td>{{$product->name}}</td>
-                                        <td>{{$product->category}}</td>
-                                        <td>{{$product->ean}}</td>
-                                        <td>{{$product->qtd}}</td>
-                                        <!-- <td>90,90</td> -->
-                                        <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a></td>
-                                    </tr>
-                                    @endforeach
+</div>
 
 
-                                </tbody>
-                        </table>
-                    </div>
+<div class="row">    
+    <div class="col-12"> 
+        <div class="card">
+            <div class="card-body">    
+                    
+                <div class="table-responsive">
+                    @if ($message = Session::get('success'))
+                    teste<br>
+                    {{$message}}
+                    @endif
+                    
+                    <table class="table product-overview" id="zero_config">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Produto</th>
+                                <th>Categoria</th>
+                                <th>EAN</th>
+                                <th>Quantidade</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            @foreach($products as $product)
+                            <tr>
+                                <td>{{$product->id}}</td>
+                                <td>{{$product->name}}</td>
+                                <td>{{$product->category}}</td>
+                                <td>{{$product->ean}}</td>
+                                <td>{{$product->qtd}}</td>
+                                <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> 
+                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </div>
 
     <!-- Column -->
     <!-- ============================================================== -->
@@ -83,78 +78,100 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
+                    
                     <div class="modal-header">
                         <h4 class="modal-title" id="exampleModalLabel1">Novo Produto</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
                     </div>
+                    
                     <div class="modal-body">
-
                         <form action="{{route('products.store')}}" method="POST" id='frmProduto'>
                             @csrf
                             <div class="card-body">
+                                
+                                <!-- linha 1 -->
                                 <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="inputcom" class="control-label col-form-label">Descrição</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto" name="name">
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label col-form-label">Categoria</label>
-                                        <select class="form-control" name="category">
-                                            <option>Selecione...</option>
-                                            <option>Funko</option>
-                                            <option>Lego</option>
-                                            <option>Camiseta</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label col-form-label">EAN</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="#000000" name="ean">
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label class="control-label col-form-label">Select File</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">Upload</span>
-                                            </div>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                                <label class="custom-file-label" for="inputGroupFile01">Procurar</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>   
-                                </div>
-                                <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label col-form-label">Qtd. Inicial</label>
+                                    <!-- Campo Descrição -->
+                                    <div class="col-12">
                                         <div class="form-group">
-                                            <input id="qtd" type="text" value="" name="qtd">
+                                            <label for="inputcom" class="control-label col-form-label">Descrição</label>
+                                            <input type="text" class="form-control" id="inputcom" placeholder="Descreva o produto" name="name">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label col-form-label">Custo</label>
-                                        <input type="text" class="form-control" id="inputcom" placeholder="00,00">
+                                <!-- fim linha 1 -->
+                                
+                                <!-- linha 2-->
+                                <div class="row">
+                                    <!-- Campo Categoria -->
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Categoria</label>
+                                            <select class="form-control" name="category">
+                                                <option>Selecione...</option>
+                                                <option>Funko</option>
+                                                <option>Lego</option>
+                                                <option>Camiseta</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Campo EAN -->
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">EAN</label>
+                                            <input type="text" class="form-control" id="inputcom" placeholder="00000000000000" name="ean">
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- fim linha 2 -->
+                                
+                                <!-- linha 3 -->
+                                {{-- <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Select File</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Upload</span>
+                                                </div>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                    <label class="custom-file-label" for="inputGroupFile01">Procurar</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div> --}}
+                                <!-- fim linha 3 -->
+
+                                <!-- linha 4 -->
+                                <div class="row">
+                                    <!-- Campom Qtd inicial -->
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Qtd. Inicial</label>
+                                            <div class="form-group">
+                                                <input id="qtd" type="text" value="" name="qtd">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Campo custo -->
+                                    {{-- <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Custo</label>
+                                            <input type="text" class="form-control" id="inputcom" placeholder="00,00">
+                                        </div>
+                                    </div> --}}
                                 </div>
+                                <!-- fim linha 4 -->
+
                             </div>
                         </form>
                     </div>
+                      
                     <div class="modal-footer">
                         <button type="submit" form='frmProduto' class="btn btn-success" id="ts-success" >Cadastrar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
@@ -162,10 +179,10 @@
                 </div>
             </div>
         </div>
+    
     </div>
 </div>
     <!-- /.modal -->
-
 @endsection
 
 @section('jquery')

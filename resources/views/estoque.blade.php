@@ -34,10 +34,10 @@
             <div class="card-body">    
                     
                 <div class="table-responsive">
-                    @if ($message = Session::get('success'))
+                    {{-- @if ($message = Session::get('success'))
                     teste<br>
                     {{$message}}
-                    @endif
+                    @endif --}}
                     
                     <table class="table product-overview" id="zero_config">
                         <thead>
@@ -60,7 +60,7 @@
                                 <td>{{$product->ean}}</td>
                                 <td>{{$product->qtd}}</td>
                                 <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> 
-                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip"><i class="ti-trash"></i></a>
+                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip" ><i class="ti-trash"></i></a>
                                 </td>
                             </tr>
                             @endforeach

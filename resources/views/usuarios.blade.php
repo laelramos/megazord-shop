@@ -13,7 +13,148 @@
 @section('title', 'Usuários')
 
 @section('main')
-    Aqui vão os valores dos produtos
+
+<div class="row">                 
+    <div class="d-flex align-items-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <button type="button" class="btn waves-effect waves-light btn-success"
+                    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+            <i class="mdi mdi-plus"></i> Novo Usuário</button> 
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<div class="row">    
+    <div class="col-12"> 
+        <div class="card">
+            <div class="card-body">    
+                    
+                <div class="table-responsive">
+                    {{-- @if ($message = Session::get('success'))
+                    teste<br>
+                    {{$message}}
+                    @endif --}}
+                    
+                    <table class="table product-overview" id="zero_config">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Nível</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            {{-- @foreach($products as $product) --}}
+                            <tr>
+                                <td>1</td>
+                                <td>Lael Ramos</td>
+                                <td>lael@lael.com</td>
+                                <td>Administrador</td>
+                                <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> 
+                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip" ><i class="ti-trash"></i></a>
+                                </td>
+                            </tr>
+                            {{-- @endforeach --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    <!-- Column -->
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+   
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel1">Novo Usuário</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form action="{{route('products.store')}}" method="POST" id='frmProduto'>
+                            @csrf
+                            <div class="card-body">
+                                
+                                <!-- linha 1 -->
+                                <div class="row">
+                                    <!-- Campo Descrição -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="inputcom" class="control-label col-form-label">Nome *</label>
+                                            <input type="text" class="form-control" id="inputcom" placeholder="Nome do usuário" name="name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fim linha 1 -->
+                                
+                                <!-- linha 2-->
+                                <div class="row">
+                                    <!-- Campo Nível -->
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Nível</label>
+                                            <select class="form-control" name="category">
+                                                <option>Selecione...</option>
+                                                <option>Administrador</option>
+                                                <option>Operador</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Campo EAN -->
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">E-mail</label>
+                                            <input type="email" class="form-control" id="inputcom" placeholder="usuario@usuario.com" name="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fim linha 2 -->
+                                
+                                <!-- linha 3 -->
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Senha *</label>
+                                            <input type="email" class="form-control" id="inputcom" placeholder="usuario@usuario.com" name="email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label col-form-label">Confirmação de Senha *</label>
+                                            <input type="email" class="form-control" id="inputcom" placeholder="usuario@usuario.com" name="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fim linha 3 -->
+
+                            </div>
+                        </form>
+                    </div>
+                      
+                    <div class="modal-footer">
+                        <button type="submit" form='frmProduto' class="btn btn-success" id="ts-success" >Cadastrar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
 
 @endsection
 

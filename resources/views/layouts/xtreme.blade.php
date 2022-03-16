@@ -473,7 +473,7 @@
 
                     <!-- Menu Estoque-->
                     <li class="sidebar-item"> 
-                    <a class="sidebar-link waves-effect waves-dark" href="/estoque" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark" href="/produtos" aria-expanded="false">
                     <i class="fas fa-dolly"></i></i><span class="hide-menu">Estoque</span></a>
                     </li>
 

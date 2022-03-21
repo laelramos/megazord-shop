@@ -385,7 +385,9 @@
             <!-- Sidebar navigation-->
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
-                    <!-- User Profile-->
+                    
+                    
+                    <!-- Perfil de Usuario-->
                     <li>
                         <!-- User Profile-->
                         <div class="user-profile d-flex no-block dropdown mt-3">
@@ -396,17 +398,17 @@
                                     <span class="op-5 user-email">varun@gmail.com</span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
-                                    <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user mr-1 ml-1"></i> My Profile</a>
+                                    {{-- <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user mr-1 ml-1"></i> My Profile</a>
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet mr-1 ml-1"></i> My Balance</a>
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email mr-1 ml-1"></i> Inbox</a>
-                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-divider"></div> --}}
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings mr-1 ml-1"></i> Account Setting</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off mr-1 ml-1"></i> Logout</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- End User Profile-->
+                        <!-- Fim Perfil de Usuario-->
 
                     <!-- Menu Dashboard-->
                     <li class="sidebar-item"> 
@@ -415,13 +417,6 @@
                     <span class="hide-menu">Dashboard </span></a>
                     </li>
                     
-                    <!-- Agenda-->
-                    <li class="sidebar-item"> 
-                    <a class="sidebar-link waves-effect waves-dark" href="/agenda" aria-expanded="false">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span class="hide-menu"> Agenda </span></a>
-                    </li>
-
                     <!-- Menu PDV-->
                     <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/pdv" aria-expanded="false">
@@ -430,7 +425,7 @@
                     </li>
 
                     <!-- Menu Comercial-->
-                    <li class="sidebar-item"> 
+                    {{-- <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="fas fa-store"></i>
                     <span class="hide-menu">Comercial</span></a>
@@ -445,17 +440,17 @@
                             <i class="fas fa-clipboard-list"></i>
                             <span class="hide-menu">Pedidos</span></a></li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <!-- Menu Logística-->
-                    <li class="sidebar-item"> 
+                    {{-- <li class="sidebar-item"> 
                     <a class="sidebar-link waves-effect waves-dark" href="/logistica" aria-expanded="false">
                     <i class="fas fa-truck"></i>
                     <span class="hide-menu">Logística</span></a>
-                    </li>
+                    </li> --}}
 
                     <!-- Menu Financeiro-->
-                    <li class="sidebar-item"> 
+                    {{-- <li class="sidebar-item"> 
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="mdi mdi-cash-multiple"></i>
                     <span class="hide-menu">Financeiro</span></a>
@@ -469,7 +464,7 @@
                             <li class="sidebar-item"><a href="/contas" class="sidebar-link">
                             <i class="fas fa-hand-holding-usd"></i><span class="hide-menu">Contas</span></a></li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <!-- Menu Estoque-->
                     <li class="sidebar-item"> 
@@ -494,21 +489,7 @@
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="fas fa-cog"></i><span class="hide-menu">Configurações</span></a>
                         <ul aria-expanded="false" class="collapse first-level">
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-toggle-switch"></i><span class="hide-menu"> Buttons</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-tablet"></i><span class="hide-menu"> Modals</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-sort-variant"></i><span class="hide-menu"> Tab</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-image-filter-vintage"></i><span class="hide-menu"> Tooltip &amp; Popover</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-message-bulleted"></i><span class="hide-menu"> Notification</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-poll"></i><span class="hide-menu"> Progressbar</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-format-line-spacing"></i><span class="hide-menu"> Typography</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-bootstrap"></i><span class="hide-menu"> Bootstrap Ui</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-equal"></i><span class="hide-menu"> Breadcrumb</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-file-video"></i><span class="hide-menu"> List Media</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-view-module"></i><span class="hide-menu"> Grid</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-view-carousel"></i><span class="hide-menu"> Carousel</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-application"></i><span class="hide-menu"> Scrollspy</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-credit-card-scan"></i><span class="hide-menu"> Toasts</span></a></li>
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-apple-safari"></i><span class="hide-menu"> Spinner</span></a></li>
+                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-account-multiple"></i><span class="hide-menu"> Usuários</span></a></li>
                         </ul>
             </nav>
             <!-- End Sidebar navigation -->

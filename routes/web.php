@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::resource('produtos', 'App\Http\Controllers\ProductController') ->names('products') ->parameters(['produtos' => 'products']);
+Route::resource('usuarios', 'App\Http\Controllers\UserController') ->names('users') ->parameters(['usuarios' => 'users']);
 
 
 Route::get('/', function () {
@@ -27,9 +28,7 @@ Route::get('/pdv', function () {
     return view('pdv');
 });
 
-Route::get('/usuarios', function () {
-    return view('usuarios');
-});
+// s
 
 
 /**

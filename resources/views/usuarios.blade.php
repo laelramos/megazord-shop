@@ -50,17 +50,19 @@
                         </thead>
                         
                         <tbody>
-                            {{-- @foreach($products as $product) --}}
+                            @foreach($users as $user)
                             <tr>
-                                <td>1</td>
-                                <td>Lael Ramos</td>
-                                <td>lael@lael.com</td>
-                                <td>Administrador</td>
-                                <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit"><i  class="ti-marker-alt"></i></a> 
-                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip" ><i class="ti-trash"></i></a>
+                                <td>$user->id</td>
+                                <td>$user->name</td>
+                                <td>$user->email</td>
+                                <td>$user->level</td>
+                                <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit">
+                                        <i  class="ti-marker-alt"></i></a> 
+                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip" >
+                                        <i class="ti-trash"></i></a>
                                 </td>
                             </tr>
-                            {{-- @endforeach --}}
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -83,7 +85,7 @@
                     </div>
                     
                     <div class="modal-body">
-                        <form action="{{route('products.store')}}" method="POST" id='frmProduto'>
+                        <form action="{{route('user.store')}}" method="post">
                             @csrf
                             <div class="card-body">
                                 

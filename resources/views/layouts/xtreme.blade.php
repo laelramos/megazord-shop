@@ -489,7 +489,7 @@
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="fas fa-cog"></i><span class="hide-menu">Configurações</span></a>
                         <ul aria-expanded="false" class="collapse first-level">
-                            <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-account-multiple"></i><span class="hide-menu"> Usuários</span></a></li>
+                            <li class="sidebar-item"><a href="/usuarios" class="sidebar-link"><i class="mdi mdi-account-multiple"></i><span class="hide-menu"> Usuários</span></a></li>
                         </ul>
             </nav>
             <!-- End Sidebar navigation -->

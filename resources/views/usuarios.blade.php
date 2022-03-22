@@ -110,7 +110,7 @@
                                     <div class="col-sm-12 col-md-6">
                                         <div class="form-group">
                                             <label class="control-label col-form-label">Nível</label>
-                                            <select class="form-control" name="level">
+                                            <select class="form-control" name="level" id="inputcom">
                                                 <option>Selecione...</option>
                                                 <option>Administrador</option>
                                                 <option>Operador</option>

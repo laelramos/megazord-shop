@@ -12,9 +12,14 @@ use Illuminate\Http\Response;
 class UserController extends Controller
 {
 
-    public function index() 
+    public function index()
     {
-        return view('usuarios');
+        $users = User::all();
+
+
+        return view('usuarios', [
+            'users' => $users
+        ]);
     }
 
 
@@ -23,9 +28,11 @@ class UserController extends Controller
         //
     }
 
-    public function store(Request $request) 
+    public function store(Request $request)
     {
-        var_dump($request);
+       
+        User::create($request->all());
+        return redirect()->route('users.index')->with('success', 'Usuário cadastrado com sucesso!');
     }
 
     

@@ -13,6 +13,9 @@
 @section('title', 'Usuários')
 
 @section('main')
+<!-- ============================================================== -->
+<!-- Start Page Content -->               
+<!-- ============================================================== -->
 
 <div class="row">                 
     <div class="d-flex align-items-center">
@@ -52,10 +55,10 @@
                         <tbody>
                             @foreach($users as $user)
                             <tr>
-                                <td>$user->id</td>
-                                <td>$user->name</td>
-                                <td>$user->email</td>
-                                <td>$user->level</td>
+                                <td>{{$user->id}}</td>
+                                <td>{{$user->name}}</td>
+                                <td>{{$user->email}}</td>
+                                <td>{{$user->level}}</td>
                                 <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit">
                                         <i  class="ti-marker-alt"></i></a> 
                                     <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip" >
@@ -85,7 +88,7 @@
                     </div>
                     
                     <div class="modal-body">
-                        <form action="{{route('user.store')}}" method="post">
+                        <form action="{{route('users.store')}}" method="POST" id='frmUser'>
                             @csrf
                             <div class="card-body">
                                 
@@ -107,7 +110,7 @@
                                     <div class="col-sm-12 col-md-6">
                                         <div class="form-group">
                                             <label class="control-label col-form-label">Nível</label>
-                                            <select class="form-control" name="category">
+                                            <select class="form-control" name="level">
                                                 <option>Selecione...</option>
                                                 <option>Administrador</option>
                                                 <option>Operador</option>
@@ -130,16 +133,16 @@
                                     <div class="col-sm-12 col-md-6">
                                         <div class="form-group">
                                             <label class="control-label col-form-label">Senha *</label>
-                                            <input type="email" class="form-control" id="inputcom" placeholder="usuario@usuario.com" name="email">
+                                            <input type="password" class="form-control" id="inputcom" placeholder="usuario@usuario.com" name="password">
                                         </div>
                                     </div>
                                     
-                                    <div class="col-sm-12 col-md-6">
+                                    {{-- <div class="col-sm-12 col-md-6">
                                         <div class="form-group">
                                             <label class="control-label col-form-label">Confirmação de Senha *</label>
                                             <input type="email" class="form-control" id="inputcom" placeholder="usuario@usuario.com" name="email">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <!-- fim linha 3 -->
 
@@ -148,7 +151,7 @@
                     </div>
                       
                     <div class="modal-footer">
-                        <button type="submit" form='frmProduto' class="btn btn-success" id="ts-success" >Cadastrar</button>
+                        <button type="submit" form='frmUser' class="btn btn-success" id="ts-success" >Cadastrar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                     </div>
                 </div>

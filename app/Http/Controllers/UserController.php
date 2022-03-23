@@ -30,9 +30,25 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-       
-        User::create($request->all());
-        return redirect()->route('users.index')->with('success', 'Usuário cadastrado com sucesso!');
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->level = $request->level;
+        $user['password'] = \Hash::make($request['password']);
+        $user->save();
+
+        dd($request->all());
+
+        return redirect()->route('user.index');//->with('success', 'Usuário cadastrado com sucesso!');
+        
+    }
+
+
+    public function destroy(User $user) 
+    {
+        $user->delete();
+        return redirect()->route('user.index');
+        //dd($user);
     }
 
     

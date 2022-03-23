@@ -59,10 +59,21 @@
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>{{$user->level}}</td>
-                                <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit">
-                                        <i  class="ti-marker-alt"></i></a> 
-                                    <a href="javascript:void(0)" class="text-inverse" title="Delete"  data-toggle="tooltip" >
-                                        <i class="ti-trash"></i></a>
+                                <td>
+                                    {{-- <a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit">
+                                        <i  class="ti-marker-alt"></i>
+                                    </a> --}}
+
+                                    <button type="button" class="btn btn-info btn-sm" style="margin:2px;">
+                                            <i class="ti-marker-alt"></i>
+                                    
+                                    <form action="{{route('user.destroy', ['user' => $user->id]) }}" method="POST">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-danger delete-btn btn-sm" style="margin:2px;" >
+                                    <i class="ti-trash" style="padding:auto;"></i>
+
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach
@@ -88,7 +99,7 @@
                     </div>
                     
                     <div class="modal-body">
-                        <form action="{{route('users.store')}}" method="POST" id='frmUser'>
+                        <form action="{{route('user.store')}}" method="POST" id='frmUser'>
                             @csrf
                             <div class="card-body">
                                 

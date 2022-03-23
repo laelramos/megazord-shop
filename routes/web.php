@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::resource('produtos', 'App\Http\Controllers\ProductController') ->names('products') ->parameters(['produtos' => 'products']);
-Route::resource('usuarios', 'App\Http\Controllers\UserController') ->names('users') ->parameters(['usuarios' => 'users']);
+Route::resource('usuarios', 'App\Http\Controllers\UserController') ->names('user') ->parameters(['usuarios' => 'user']);
 
 
 Route::get('/', function () {

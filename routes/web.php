@@ -20,9 +20,11 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+Route::get('/admin', 'App\Http\Controllers\AuthController@dashboard')->name('admin');
+Route::get('/admin/login', 'App\Http\Controllers\AuthController@showLogin')->name('login');
+Route::post('login/do', 'App\Http\Controllers\AuthController@login')->name('login.do');
+
+
 
 Route::get('/pdv', function () {
     return view('pdv');

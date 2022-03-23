@@ -64,8 +64,12 @@
                                         <i  class="ti-marker-alt"></i>
                                     </a> --}}
 
-                                    <button type="button" class="btn btn-info btn-sm" style="margin:2px;">
+                                    <button type="button" class="btn btn-info btn-sm"
+                                            data-toggle="modal" data-target="#confirmModal" data-whatever="@mdo">
                                             <i class="ti-marker-alt"></i>
+                                    
+                                    {{-- <button type="button" class="btn btn-info btn-sm" style="margin:2px;">
+                                            <i class="ti-marker-alt"></i> --}}
                                     
                                     <form action="{{route('user.destroy', ['user' => $user->id]) }}" method="POST">
                                     @csrf
@@ -86,8 +90,10 @@
     <!-- Column -->
     <!-- ============================================================== -->
     <!-- End PAge Content -->
-   
-    <!-- Modal -->
+  
+    
+
+    <!-- Modal novo usuario-->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -168,6 +174,30 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- Modal confirma exclusao-->
+        <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel1">Deseja remover {{$user->name}}?</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span></button>
+                            </div>
+                          
+                        <div class="modal-footer">
+                                <form action="{{route('user.destroy', ['user' => $user->id]) }}" method="POST">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" form='frmUser' class="btn btn-success" id="ts-success">Remover</button>
+                                </form>
+                            
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
     </div>
 </div>

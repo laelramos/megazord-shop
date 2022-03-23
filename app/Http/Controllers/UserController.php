@@ -37,7 +37,7 @@ class UserController extends Controller
         $user['password'] = \Hash::make($request['password']);
         $user->save();
 
-        dd($request->all());
+        // dd($request->all());
 
         return redirect()->route('user.index');//->with('success', 'Usuário cadastrado com sucesso!');
         

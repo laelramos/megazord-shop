@@ -52,7 +52,7 @@
                         </thead>
                         
                         <tbody>
-                            @foreach($products as $product)
+                            @foreach($product as $product)
                             <tr>
                                 <td>{{$product->id}}</td>
                                 <td>{{$product->name}}</td>
@@ -60,17 +60,19 @@
                                 <td>{{$product->ean}}</td>
                                 <td>{{$product->qtd}}</td>
                                 <td>
-                                    <a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="Edit">
-                                        <i  class="ti-marker-alt"></i></a>
-                                        
+                                       
+                                    <button class="text-inverse btn btn-info" title="Delete" data-toggle="tooltip" type="submit">
+                                        <i  class="ti-marker-alt"></i>
+                                    </button>  
                                     
-                                    <a href="" class="text-inverse" title="Delete" data-toggle="tooltip" >
-                                        <form action="{{route('user.destroy', ['user' => $user->id])}}" method="post">
-                                        @csrf
-                                        @method('delete')
-                                        <i class="ti-trash"></i>
-                                        </form>
-                                    </a>
+                                    <form action="{{route('product.destroy', ['product' => $product->id])}}" method="post">
+                                        <button class="text-inverse btn btn-danger" title="Delete" data-toggle="tooltip" type="submit">
+                                            @csrf
+                                            @method('delete')
+                                            <i class="ti-trash"></i>
+                                        </button>
+                                    </form>
+                                    
                                     
                                 </td>
                             </tr>
@@ -97,7 +99,7 @@
                     </div>
                     
                     <div class="modal-body">
-                        <form action="{{route('products.store')}}" method="POST" id='frmProduto'>
+                        <form action="{{route('product.store')}}" method="POST" id='frmProduto'>
                             @csrf
                             <div class="card-body">
                                 
@@ -112,6 +114,7 @@
                                     </div>
                                 </div>
                                 <!-- fim linha 1 -->
+                                
                                 
                                 <!-- linha 2-->
                                 <div class="row">
@@ -138,6 +141,7 @@
                                 </div>
                                 <!-- fim linha 2 -->
                                 
+
                                 <!-- linha 3 -->
                                 {{-- <div class="row">
                                     <div class="col-12">
@@ -157,6 +161,7 @@
                                 </div> --}}
                                 <!-- fim linha 3 -->
 
+
                                 <!-- linha 4 -->
                                 <div class="row">
                                     <!-- Campom Qtd inicial -->
@@ -168,14 +173,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    <!-- Campo custo -->
-                                    {{-- <div class="col-sm-12 col-md-6">
-                                        <div class="form-group">
-                                            <label class="control-label col-form-label">Custo</label>
-                                            <input type="text" class="form-control" id="inputcom" placeholder="00,00">
-                                        </div>
-                                    </div> --}}
                                 </div>
                                 <!-- fim linha 4 -->
 

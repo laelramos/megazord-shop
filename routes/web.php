@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('produtos', 'App\Http\Controllers\ProductController') ->names('products') ->parameters(['produtos' => 'products']);
+Route::resource('produtos', 'App\Http\Controllers\ProductController') ->names('product') ->parameters(['produtos' => 'product']);
 Route::resource('usuarios', 'App\Http\Controllers\UserController') ->names('user') ->parameters(['usuarios' => 'user']);
 
 

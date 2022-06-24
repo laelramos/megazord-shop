@@ -14,13 +14,14 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $product = Product::all();
 
 
         return view('estoque', [
-            'products' => $products
+            'product' => $product
         ]);
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -32,6 +33,7 @@ class ProductController extends Controller
         //
     }
 
+
     /**
      * Store a newly created resource in storage.
      *
@@ -42,8 +44,9 @@ class ProductController extends Controller
     {
        
         Product::create($request->all());
-        return redirect()->route('products.index')->with('success', 'Produto cadastrado com sucesso!');
+        return redirect()->route('product.index')->with('success', 'Produto cadastrado com sucesso!');
     }
+
 
     /**
      * Display the specified resource.
@@ -56,6 +59,7 @@ class ProductController extends Controller
         //
     }
 
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -66,6 +70,7 @@ class ProductController extends Controller
     {
         //
     }
+
 
     /**
      * Update the specified resource in storage.
@@ -79,6 +84,7 @@ class ProductController extends Controller
         //
     }
 
+
     /**
      * Remove the specified resource from storage.
      *
@@ -87,6 +93,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+                return redirect()->route('product.index')->with('success', 'Produto com sucesso!');
     }
 }

@@ -8474,7 +8474,7 @@ Preloader
     border-radius: 50%;
     animation: lds-ripple 1s cubic-bezier(0, 0.1, 0.5, 1) infinite; }
   .lds-ripple .lds-pos:nth-child(2) {
-    animation-delay: -0.5s; }
+    animation-delay: -0.2s; }
 
 @keyframes lds-ripple {
   0% {

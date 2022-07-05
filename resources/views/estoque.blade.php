@@ -42,7 +42,7 @@
                     <table class="table product-overview" id="zero_config">
                         <thead>
                             <tr>
-                                <th>ID</th>
+                                {{-- <th>ID</th> --}}
                                 <th>Produto</th>
                                 <th>Categoria</th>
                                 <th>EAN</th>
@@ -54,27 +54,24 @@
                         <tbody>
                             @foreach($product as $product)
                             <tr>
-                                <td>{{$product->id}}</td>
+                                {{-- <td>{{$product->id}}</td> --}}
                                 <td>{{$product->name}}</td>
                                 <td>{{$product->category}}</td>
                                 <td>{{$product->ean}}</td>
                                 <td>{{$product->qtd}}</td>
-                                <td>
-                                       
-                                    <button class="text-inverse btn btn-info" title="Delete" data-toggle="tooltip" type="submit">
+                                <td>                                       
+                                    <button class="text-inverse btn-xs btn-info" title="Edit" data-toggle="tooltip" type="submit">
                                         <i  class="ti-marker-alt"></i>
                                     </button>  
                                     
-                                    <form action="{{route('product.destroy', ['product' => $product->id])}}" method="post">
-                                        <button class="text-inverse btn btn-danger" title="Delete" data-toggle="tooltip" type="submit">
+                                    <form action="{{route('product.destroy', ['product' => $product->id])}}" method="post" class="d-inline-block">
+                                        <button class="text-inverse btn-xs btn-danger" title="Delete" data-toggle="tooltip" type="submit">
                                             @csrf
                                             @method('delete')
                                             <i class="ti-trash"></i>
                                         </button>
                                     </form>
-                                    
-                                    
-                                </td>
+                                </td>    
                             </tr>
                             @endforeach
                         </tbody>
